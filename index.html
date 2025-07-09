@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>私のポートフォリオ</title>
+    <!-- Tailwind CSS CDNを読み込み -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Google Fonts - Interを読み込み */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* 薄いグレーの背景 */
+            color: #374151; /* ダークグレーのテキスト */
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* 上部に寄せる */
+            min-height: 100vh;
+            padding: 2rem 1rem; /* 上下のパディングを追加 */
+            box-sizing: border-box;
+        }
+        .container {
+            max-width: 600px; /* コンテンツの最大幅を制限 */
+            width: 100%;
+            background-color: #ffffff; /* 白い背景 */
+            border-radius: 1.5rem; /* 大きめの角丸 */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* 影 */
+            padding: 2rem;
+            text-align: center;
+        }
+        .link-button {
+            display: block; /* ブロック要素にして幅いっぱいに */
+            width: 100%;
+            padding: 0.75rem 1.5rem;
+            margin-bottom: 1rem; /* ボタン間のスペース */
+            background-color: #6366f1; /* 紫色の背景 */
+            color: #ffffff; /* 白いテキスト */
+            font-weight: 600; /* セミボールド */
+            text-decoration: none; /* 下線なし */
+            border-radius: 0.75rem; /* 角丸 */
+            transition: background-color 0.3s ease, transform 0.2s ease; /* ホバーアニメーション */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* 影 */
+        }
+        .link-button:hover {
+            background-color: #4f46e5; /* ホバーで少し濃い紫 */
+            transform: translateY(-2px); /* 少し上に移動 */
+        }
+        .link-button:active {
+            transform: translateY(0); /* クリックで元に戻す */
+            box-shadow: none;
+        }
+        /* レスポンシブデザインのための調整 */
+        @media (min-width: 768px) {
+            .container {
+                padding: 3rem;
+            }
+            .link-button {
+                padding: 1rem 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- プロフィール画像 (オプション) -->
+        <div class="mb-6">
+            <img src="https://placehold.co/128x128/6366f1/ffffff?text=Your+Photo" alt="プロフィール写真" class="w-32 h-32 rounded-full mx-auto object-cover border-4 border-indigo-200 shadow-lg">
+        </div>
+
+        <!-- 名前/タイトル -->
+        <h1 class="text-4xl font-extrabold text-gray-900 mb-2">あなたの名前</h1>
+        <p class="text-lg text-gray-600 mb-8">Web開発者 | デザイナー | クリエイター</p>
+
+        <!-- 自己紹介 -->
+        <p class="text-base text-gray-700 leading-relaxed mb-10">
+            こんにちは！こちらは私のポートフォリオ兼リンク集です。
+            Web開発やデザイン、その他のクリエイティブな活動を行っています。
+            以下のリンクから私の作品やソーシャルメディアをご覧ください。
+        </p>
+
+        <!-- リンク集 -->
+        <div class="space-y-4">
+            <a href="https://github.com/your-github" target="_blank" rel="noopener noreferrer" class="link-button">
+                GitHub プロフィール
+            </a>
+            <a href="https://your-portfolio-site.com" target="_blank" rel="noopener noreferrer" class="link-button">
+                ポートフォリオサイト
+            </a>
+            <a href="https://your-linkedin.com" target="_blank" rel="noopener noreferrer" class="link-button">
+                LinkedIn
+            </a>
+            <a href="https://twitter.com/your-twitter" target="_blank" rel="noopener noreferrer" class="link-button">
+                X (旧Twitter)
+            </a>
+            <a href="mailto:your.email@example.com" class="link-button">
+                お問い合わせ (メール)
+            </a>
+            <!-- 必要に応じてリンクを追加 -->
+            <a href="https://your-blog.com" target="_blank" rel="noopener noreferrer" class="link-button">
+                ブログ
+            </a>
+            <a href="https://your-dribbble.com" target="_blank" rel="noopener noreferrer" class="link-button">
+                Dribbble (デザイン)
+            </a>
+        </div>
+
+        <!-- フッター -->
+        <footer class="mt-12 text-sm text-gray-500">
+            &copy; 2025 あなたの名前. All rights reserved.
+        </footer>
+    </div>
+</body>
+</html>
